@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "afd30132bacbf9592eb98a0822577b0b",
+    "revision": "602a380f39b09a1899ee71b15b536879",
     "url": "/ImmigrationDev/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ImmigrationDev/static/css/2.aa9ece52.chunk.css"
   },
   {
-    "revision": "755349bf681295ec15a9",
+    "revision": "1d7108bd6fa1836181f9",
     "url": "/ImmigrationDev/static/css/main.02ded098.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ImmigrationDev/static/js/2.e1d1b33d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "755349bf681295ec15a9",
-    "url": "/ImmigrationDev/static/js/main.c75587bd.chunk.js"
+    "revision": "1d7108bd6fa1836181f9",
+    "url": "/ImmigrationDev/static/js/main.fba2ca0e.chunk.js"
   },
   {
     "revision": "5cd2b30af9c81f465467",
@@ -100,7 +100,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ImmigrationDev/static/media/fa-solid-900.ec763292.svg"
   },
   {
-    "revision": "7f6de6cef4b59e7f16428c448fa1a7a1",
-    "url": "/ImmigrationDev/static/media/logo.7f6de6ce.png"
+    "revision": "338e0665a3b172559b5d9a95ba1b277c",
+    "url": "/ImmigrationDev/static/media/logos.338e0665.png"
   }
 ]);
