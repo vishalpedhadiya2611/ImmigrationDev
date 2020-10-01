@@ -1,0 +1,232 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  monospace;
+}
+
+.logo {
+}
+
+#root .btn-pink {
+  background-color: #ff0083 !important;
+  box-shadow: rgba(255, 0, 131, 0.5) 0px 10px 40px -10px !important;
+  border-radius: 5px !important;
+}
+
+#root .btn-pink:hover {
+  background-color: #dc0073 !important;
+}
+
+.site-header {
+  box-shadow: none !important;
+  border: 1px solid #ccc;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.avatar {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -50%);
+  max-width: 80px;
+  border-radius: 100%;
+}
+
+.custom-control-label {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+
+.custom-control-label::after,
+.custom-control-label::before {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  margin-right: 10px;
+}
+
+.main-content {
+  position: relative;
+}
+
+.input-dollar {
+}
+
+.btn-back {
+  width: 30px;
+  position: absolute;
+  left: 20px;
+  top: 0;
+}
+
+.form-control:focus {
+  border-color: unset !important;
+  box-shadow: unset !important;
+}
+
+.labelClass {
+  font-weight: 300;
+}
+
+.custom-select-box {
+  width: 20rem;
+}
+
+.custom-check-large {
+  width: 1.25rem !important;
+}
+
+.inline-components{
+  align-items: flex-end !important;
+}
+
+.custom-text-input {
+  width: 20rem !important;
+}
+
+.custom-text-input-small {
+  width: 10rem !important;
+}
+
+.custom-text-input-medium {
+  width: 23rem !important;
+}
+
+.array-list{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  padding-bottom: 1rem;
+}
+
+.childinfo-block{
+  border-bottom: 1px solid gray;
+  padding-bottom: 1rem;
+}
+
+.custom-check-label {
+  width: 18rem !important;
+  justify-content: flex-start !important;
+}
+
+.MuiPickersDay-daySelected{
+  background-color: #fd00bb !important;
+}
+
+.MuiPickersToolbar-toolbar {
+  background-color: #fd00bb !important;
+}
+
+.MuiTypography-colorPrimary{
+  color: #fd00bb !important;
+}
+
+.MuiPickersYear-root:focus {
+  color: #fd00bb !important;
+}
+
+.google-map-container {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#root .md-form input:not([type]):focus:not([readonly]) + label,
+#root
+.md-form
+input[type="text"]:not(.browser-default):focus:not([readonly])
++ label,
+#root
+.md-form
+input[type="password"]:not(.browser-default):focus:not([readonly])
++ label,
+#root
+.md-form
+input[type="email"]:not(.browser-default):focus:not([readonly])
++ label,
+#root
+.md-form
+input[type="url"]:not(.browser-default):focus:not([readonly])
++ label,
+#root
+.md-form
+input[type="time"]:not(.browser-default):focus:not([readonly])
++ label,
+#root
+.md-form
+input[type="date"]:not(.browser-default):focus:not([readonly])
++ label,
+#root
+.md-form
+input[type="datetime"]:not(.browser-default):focus:not([readonly])
++ label,
+#root
+.md-form
+input[type="datetime-local"]:not(.browser-default):focus:not([readonly])
++ label,
+#root
+.md-form
+input[type="tel"]:not(.browser-default):focus:not([readonly])
++ label,
+#root
+.md-form
+input[type="number"]:not(.browser-default):focus:not([readonly])
++ label,
+#root
+.md-form
+input[type="search"]:not(.browser-default):focus:not([readonly])
++ label,
+#root .md-form input[type="search-md"]:focus:not([readonly]) + label,
+#root .md-form textarea.md-textarea:focus:not([readonly]) + label,
+.md-form .prefix.active {
+  color: #ff0083 !important;
+}
+
+#root .md-form input:not([type]):focus:not([readonly]),
+#root .md-form input[type="text"]:not(.browser-default):focus:not([readonly]),
+#root
+.md-form
+input[type="password"]:not(.browser-default):focus:not([readonly]),
+#root .md-form input[type="email"]:not(.browser-default):focus:not([readonly]),
+#root .md-form input[type="url"]:not(.browser-default):focus:not([readonly]),
+#root .md-form input[type="time"]:not(.browser-default):focus:not([readonly]),
+#root .md-form input[type="date"]:not(.browser-default):focus:not([readonly]),
+#root
+.md-form
+input[type="datetime"]:not(.browser-default):focus:not([readonly]),
+#root
+.md-form
+input[type="datetime-local"]:not(.browser-default):focus:not([readonly]),
+#root .md-form input[type="tel"]:not(.browser-default):focus:not([readonly]),
+#root .md-form input[type="number"]:not(.browser-default):focus:not([readonly]),
+#root .md-form input[type="search"]:not(.browser-default):focus:not([readonly]),
+#root .md-form input[type="search-md"]:focus:not([readonly]),
+#root .md-form textarea.md-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid rgba(255, 0, 131, 0.5);
+  box-shadow: 0 1px 0 0 rgba(255, 0, 131, 0.5);
+}
+
+.modal .modal-fluid {
+  max-width: 95%;
+}
+
+@media (max-width: 576px) {
+  .logo {
+    max-width: 43% !important;
+  }
+
+  .btn-back {
+    width: 15px;
+    top: -30px;
+  }
+}
