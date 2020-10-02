@@ -215,11 +215,11 @@ export default class MultiStepForm extends Component {
         if (this.state.employed) data['employerDetails'] = this.state.employerDetails;
         if (this.state.hasOwnProperty('prevEmployerDetails')) data['prevEmployerDetails'] = this.state.prevEmployerDetails;
 
-        const proxyurl = "https://cors-anywhere.herokuapp.com/";
+        
         const url = 'https://migrationade.com/api/i130a';
 
         if((Object.keys(this.state).length > 0)){
-            axios.post((proxyurl+url), data,{
+            axios.post(url, data,{
                 headers: {
                     'Content-Type' : 'application/json',
                     'Authorization' : 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IjVmNzY4ZDQyOWY3YTc3ZjhlZTA4ZDRiMTFlY2NkYmVhMzRmM2Q3ZDAwYTVkNGRhMGYwZjgwNWEyZjJhNjVhYzAyZThlMTk3ZDIyM2I2NWY3NjhkNDI5ZjdjYmI2YTgzMWU3NzQyNTdiZmEyNDAzYjQxMThiOThkZDFhNWY3NjhkNDI5ZjdmZiI.E1dSmiJ60WVtbGDiuc66_YpW75GEZHDNEoHVi_FS6PA',
