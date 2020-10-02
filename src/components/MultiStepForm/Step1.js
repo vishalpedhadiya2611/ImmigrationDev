@@ -6,7 +6,7 @@ import {FormControlLabel} from "@material-ui/core";
 import CustomCheckBox from "../../shared/utility";
 
 const Step1 = props => {
-    const {state, nextStep} = props;
+    const {nextStep} = props;
     const [errorMsg, setErrorMsg] = useState({});
     const [localState, setLocalState] = useState(props.state);
 

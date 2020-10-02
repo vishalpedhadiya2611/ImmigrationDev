@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {MDBBtn, MDBCol, MDBContainer, MDBFormInline, MDBInput, MDBRow,} from "mdbreact";
+import {MDBBtn, MDBCol, MDBContainer, MDBRow} from "mdbreact";
 import Step from "./Step";
 import BackBtn from "../../assets/back-btn.png";
 import {fieldValidator} from "./validator";

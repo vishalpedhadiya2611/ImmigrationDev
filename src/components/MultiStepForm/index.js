@@ -132,6 +132,8 @@ export default class MultiStepForm extends Component {
         );
     };*/
 
+	linkRef = React.createRef();
+
     handleChangeState = newState => {
         this.setState(newState);
     }
@@ -213,24 +215,44 @@ export default class MultiStepForm extends Component {
         if (this.state.employed) data['employerDetails'] = this.state.employerDetails;
         if (this.state.hasOwnProperty('prevEmployerDetails')) data['prevEmployerDetails'] = this.state.prevEmployerDetails;
 
-        console.log("Body: ", JSON.stringify(data));
-        /*axios
-            .post("https://hooks.zapier.com/hooks/catch/1712527/o5y1jta/", data)
-            .then((response) => console.log(response))
-            .finally(() => console.log("Data Sent", {data: data}));*/
+        const proxyurl = "https://cors-anywhere.herokuapp.com/";
+        const url = 'https://migrationade.com/api/i130a';
+
+        if((Object.keys(this.state).length > 0)){
+            axios.post((proxyurl+url), data,{
+                headers: {
+                    'Content-Type' : 'application/json',
+                    'Authorization' : 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IjVmNzY4ZDQyOWY3YTc3ZjhlZTA4ZDRiMTFlY2NkYmVhMzRmM2Q3ZDAwYTVkNGRhMGYwZjgwNWEyZjJhNjVhYzAyZThlMTk3ZDIyM2I2NWY3NjhkNDI5ZjdjYmI2YTgzMWU3NzQyNTdiZmEyNDAzYjQxMThiOThkZDFhNWY3NjhkNDI5ZjdmZiI.E1dSmiJ60WVtbGDiuc66_YpW75GEZHDNEoHVi_FS6PA',
+                    'Access-Control-Allow-Credentials': 'true'
+                }
+            })
+                .then((response) => {
+                    if(response.status === 200){
+                        const href = response.data.data.link;
+                        const a = this.linkRef.current;
+                        a.download = 'MyForm.pdf';
+                        a.href = href;
+                        a.target= "_blank";
+                        a.click();
+                        a.href = '';
+                    }
+                })
+                .catch((error)=> console.log('Error::',error))
+                .finally(() => console.log("Data Sent", {data: this.state}));
+        }
     }
 
     renderStep = (props) => {
         const {history} = props;
         const {path, params} = props.match;
+		const currentPath = `/${path.split("/")[1]}`;
         if (params.step === "thankyou") {
             this.submitData();
-            return <ThankYou/>;
+            return <ThankYou history={history} nextStep={`${currentPath}/1`} />;
         } else if (params.step === "decline") {
             return <Decline/>;
         }
         const step = parseInt(params.step);
-        const currentPath = `/${path.split("/")[1]}`;
         switch (step) {
             case 1:
                 return (
@@ -617,6 +639,7 @@ export default class MultiStepForm extends Component {
                         </div>*/}
                     </>}/>
                 </Switch>
+				<a ref={this.linkRef}/>
             </MuiPickersUtilsProvider>
         );
     }

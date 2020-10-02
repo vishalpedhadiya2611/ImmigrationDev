@@ -7,7 +7,7 @@ import InputMask from "react-input-mask";
 import {fieldValidator} from "./validator";
 
 const Step30 = props => {
-    const {state, prevStep, nextStep, history} = props;
+    const { prevStep, nextStep, history} = props;
     const [errorMsg, setErrorMsg] = useState({});
     const [localState, setLocalState] = useState(props.state);
 

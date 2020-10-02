@@ -6,7 +6,7 @@ import TextField from "@material-ui/core/TextField";
 import {fieldValidator} from "./validator";
 
 const Step34 = props => {
-    const {state, prevStep, nextStep, history} = props;
+    const {prevStep, nextStep, history} = props;
     const [errorMsg, setErrorMsg] = useState({});
     const [localState, setLocalState] = useState(props.state);
 

@@ -8,7 +8,7 @@ import {FormControlLabel} from "@material-ui/core";
 import TextField from "@material-ui/core/TextField";
 
 const Step29 = props => {
-    const {state, prevStep, nextStep, history} = props;
+    const { prevStep, nextStep, history} = props;
     const [errorMsg, setErrorMsg] = useState({});
     const [localState, setLocalState] = useState(props.state);
 
