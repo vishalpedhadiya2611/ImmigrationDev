@@ -215,14 +215,14 @@ export default class MultiStepForm extends Component {
         if (this.state.employed) data['employerDetails'] = this.state.employerDetails;
         if (this.state.hasOwnProperty('prevEmployerDetails')) data['prevEmployerDetails'] = this.state.prevEmployerDetails;
 
-        
+        const proxyurl = "https://cors-anywhere.herokuapp.com/";
         const url = 'https://migrationade.com/api/i130a';
 
         if((Object.keys(this.state).length > 0)){
-            axios.post(url, data,{
+            axios.post((proxyurl+url), data,{
                 headers: {
                     'Content-Type' : 'application/json',
-                    'Authorization' : 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IjVmNzY4ZDQyOWY3YTc3ZjhlZTA4ZDRiMTFlY2NkYmVhMzRmM2Q3ZDAwYTVkNGRhMGYwZjgwNWEyZjJhNjVhYzAyZThlMTk3ZDIyM2I2NWY3NjhkNDI5ZjdjYmI2YTgzMWU3NzQyNTdiZmEyNDAzYjQxMThiOThkZDFhNWY3NjhkNDI5ZjdmZiI.E1dSmiJ60WVtbGDiuc66_YpW75GEZHDNEoHVi_FS6PA',
+                    'Authorization' : 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IjVmN2FjZmExNDhhY2Q4OTQwM2QxYjFhMDU1YmJlMTkwODI3Y2Y2MDc3OWFjMWRhMGYwZjgwNWEyZjJhNjVhYzAyZThlMTk3ZDIyM2I2NWY3YWNmYTE0OGFkMzNkMzBjNWNlMDdiNmRlNDNiNTU3ZDk1ZTc4MjY1NDQyNWY3YWNmYTE0OGIwYyI.ujpgKBqpU0F5A6Jl6l02e-SE4Y4wn8YHDTHBOb8tVt8',
                     'Access-Control-Allow-Credentials': 'true'
                 }
             })
