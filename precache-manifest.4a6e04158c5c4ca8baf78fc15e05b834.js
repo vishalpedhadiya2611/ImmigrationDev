@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "638edddd5e214b086c5444e4bad3bf0b",
+    "revision": "977303ef39142b1662aaa1a3a6c09d38",
     "url": "/ImmigrationDev/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ImmigrationDev/static/css/2.aa0c308f.chunk.css"
   },
   {
-    "revision": "64a5c34306dffad22f76",
+    "revision": "ece690364f23ff9528c2",
     "url": "/ImmigrationDev/static/css/main.02ded098.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ImmigrationDev/static/js/2.45b00d87.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "64a5c34306dffad22f76",
-    "url": "/ImmigrationDev/static/js/main.aa7339dd.chunk.js"
+    "revision": "ece690364f23ff9528c2",
+    "url": "/ImmigrationDev/static/js/main.5729ea43.chunk.js"
   },
   {
     "revision": "5cd2b30af9c81f465467",
